@@ -97,9 +97,9 @@ void mergesort(int* A, int n) {
 	printf("\n");
 }
 void swap(int *a, int *b) {
-	int *temp = b;
-	b = a;
-	a = temp;
+	int temp = *b;
+	*b = *a;
+	*a = temp;
 }
 //quick sort
 int partition(int* A, int start, int end) {
