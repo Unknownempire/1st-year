@@ -21,6 +21,8 @@ int isfull(queue *q);
 void print(queue *q) {
 	int i;
 	for(i = q -> front; i <= q -> rear; i++) {
+		if(q -> rear == -1)
+			break;
 		printf(" %d", q -> data[i]);
 	}
 	printf("\n");
